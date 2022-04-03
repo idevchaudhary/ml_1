@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body{
+           text-align: center;
+           border: 2px solid black;
+           margin:0px 25% 25% ;
+           padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+    <h1>Salary Prediction Model</h1>
+
+    <form action="/result/" method="post">
+        {%csrf_token%}
+        <input style="width: 70%;" type="text" placeholder="Enter your Experience in years" required name="r1"> <br> <br>
+        <input type="submit">
+    </form>
+    <p>This is a Salary Prediction Model with Linear Regression which predict your salary based on your work experience.</p>
+    <p>I have deployed it on pythonanywhere using Django.</p>
+    <ul>For practice purpose:</ul>
+    <li>Data from <a href="https://www.kaggle.com/datasets/karthickveerakumar/salary-data-simple-linear-regression">Click here for csv file</a></li>
+    <li>For code <a href="https://github.com/idevchaudhary/ml_1">Click Here for code</a></li>
+</div>
+</body>
+</html>
